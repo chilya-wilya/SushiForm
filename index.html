@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Оформление заказа</title>
+</head>
+<body>
+
+    <section class="make-order">
+        
+        <header class="header">
+            <div class="go-back">
+                <button id="go-back-arrow"></button>
+                <label for="go-back-arrow" class="go-back-info">Продолжить выбор</label>
+            </div>
+
+            <p class="contact-info">
+
+                <span class="phone-description">Наш телефон</span>
+
+                <span class="phone-number">
+                    +996 705 188 955
+                </span>
+
+                <span class="phone-number">
+                    +996 555 188 955
+                </span>
+
+                <span class="work-hours">
+                    <img src="./images/clock.png" alt="clock">
+                    работаем с 10:00 до 00:00
+                </span>
+
+            </p>
+
+        </header>
+
+        <form class="form">
+
+            <h2>Ваши данные</h2>
+
+            <div class="form-wrapper">
+
+                <div class="first-column">
+
+                    <div class="input">
+    
+                        <input class="basic-input tel-input person-input" type="tel" placeholder="Телефон">
+                        <input class="basic-input person-input" type="text" placeholder="Имя">
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <input class="radio-base" type="radio" name="pay-type" id="cash" checked>
+                        <label class="basic-input radio-input right" for="cash">
+                            <img class="vallet" src="./images/cash.svg" alt="cash">
+                            Наличными
+                        </label>
+                        <input class="radio-base" type="radio" name="pay-type" id="money">
+                        <label class="basic-input radio-input left" for="money">
+                            <img class="card" src="./images/card.svg" alt="card">
+                            Картой
+                        </label>
+    
+                    </div>
+    
+                    <div class="input change-input">
+    
+                        <input class="checkbox-input" type="checkbox" id="change">
+                        <label class="basic-input label" for="change">Подготовить сдачу с</label>
+                        <input class="summ-input basic-input" type="text" name="change-summ" placeholder="Сумма">
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <input class="basic-input big-input" type="text" placeholder="Коммантарий к заказу">
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <div class="input input-option-first">
+    
+                            <span class="add-option">Палочки + соусник обычные</span>
+    
+                            <button class="minus">-</button>
+                            <input class="add-option-summ" type="number" name="add-option-summ" placeholder="10" disabled>
+                            <button class="plus"></button>
+                            
+                        </div>
+    
+                    </div>
+                    
+                    <div class="input input-option-second">
+
+                        <div class="input">
+    
+                            <span class="add-option">Палочки + соусник обычные</span>
+    
+                            <button class="minus">-</button>
+                            <input class="add-option-summ" type="number" name="add-option-summ" placeholder="10" disabled>
+                            <button class="plus"></button>
+                            
+                        </div>
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <input class="basic-input big-input" type="text" placeholder="Введите промокод">
+    
+                    </div>
+    
+                </div>
+    
+                <div class="second-column">
+    
+                    <div class="input">
+    
+                        <input class="radio-base" type="radio" name="delivery-type" id="delivery" checked>
+                        <label class="basic-input radio-input right" for="delivery">Курьером</label>
+                        <input class="radio-base" type="radio" name="delivery-type" id="self-pick">
+                        <label class="basic-input radio-input left" for="self-pick">Самовывоз</label>
+    
+                    </div>
+    
+                    <div class="input adress">
+    
+                        <input class="basic-input street" type="text" placeholder="Улица">
+                        <input class="basic-input house" type="text" placeholder="Дом">
+    
+                    </div>
+    
+                    <div class="input small-input">
+    
+                        <input class="basic-input small" type="text" placeholder="Кв">
+                        <input class="basic-input small door" type="text" placeholder="Подъезд">
+                        <input class="basic-input small" type="text" placeholder="Этаж">
+                        <input class="basic-input small" type="text" placeholder="Код">
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <input class="radio-base" type="radio" name="delivery-time" id="now" checked>
+                        <label class="basic-input radio-input right" for="now">На сейчас</label>
+                        <input class="radio-base" type="radio" name="delivery-time" id="postpone">
+                        <label class="basic-input radio-input left" for="postpone">На время</label>
+    
+                    </div>
+    
+                    <div class="input">
+    
+                        <input class="basic-input big-input" type="text" placeholder="E-mail(необязательно)">
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <button class="basic-input submit-button" type="submit">Оформить заказ</button>
+
+        </form>
+
+        <footer class="footer">
+            Нажимая на кнопку Оформить заказ, Вы подтверждаете свое согласие на обработку персональных данных в соответствии с <a href="#" class="footer-link">Публичной оффертой</a> 
+        </footer>
+
+    </section>
+    
+</body>
+</html>
